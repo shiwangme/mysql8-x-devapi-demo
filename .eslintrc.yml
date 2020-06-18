@@ -1,0 +1,14 @@
+root: true
+extends:
+  - '@shiwangme'
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+  project: ./tsconfig.json
+rules:
+  import/prefer-default-export: 0
+  import/extensions:
+    - 0
+    - always
+    - ts: never

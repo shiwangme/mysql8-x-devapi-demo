@@ -1,0 +1,38 @@
+{
+  "name": "mysql8",
+  "version": "1.0.0",
+  "description": "Demo",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node src",
+    "start": "node --no-warnings dist",
+    "build": "tsc",
+    "lint": "eslint --ext .js,.ts --fix src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiwangme/mysql8-x-devapi-demo.git"
+  },
+  "keywords": [
+    "mysql",
+    "x-devapi"
+  ],
+  "author": "Willin Wang",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/shiwangme/mysql8-x-devapi-demo/issues"
+  },
+  "homepage": "https://github.com/shiwangme/mysql8-x-devapi-demo#readme",
+  "devDependencies": {
+    "@shiwangme/eslint-config": "^1.0.6",
+    "eslint": "^7.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "root-require": "^0.3.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@mysql/xdevapi": "^8.0.20",
+    "mysqlx": "^1.1.6"
+  }
+}
