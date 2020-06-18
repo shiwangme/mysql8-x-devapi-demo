@@ -1,5 +1,5 @@
-import mysqlx from '@mysql/xdevapi';
-// import mysqlx from 'mysqlx';
+// import mysqlx from '@mysql/xdevapi';
+import mysqlx from 'mysqlx';
 
 const client = mysqlx.getClient(
   {
@@ -24,13 +24,13 @@ async function main(): Promise<void> {
 
   console.log(result.rows);
 
-  const table = session.getSchema('world_x').getTable('city');
-  const selected = await table
-    .select('ID', 'Name')
-    .limit(10)
-    .offset(0)
-    .execute();
-  console.log(selected.fetchAll());
+  // const table = session.getSchema('world_x').getTable('city');
+  // const selected = await table
+  //   .select('ID', 'Name')
+  //   .limit(10)
+  //   .offset(0)
+  //   .execute();
+  // console.log(selected.fetchAll());
 }
 
 main();
