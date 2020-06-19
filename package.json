@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "ts-node src",
-    "start": "node --no-warnings dist",
+    "start": "node --no-warnings node/",
+    "dist": "node --no-warnings dist",
     "build": "tsc",
     "lint": "eslint --ext .js,.ts --fix src"
   },
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@shiwangme/eslint-config": "^1.0.6",
     "eslint": "^7.2.0",
+    "eslint-config-shiwangme": "^1.0.2",
     "eslint-plugin-import": "^2.21.2",
     "root-require": "^0.3.1",
     "ts-node": "^8.10.2",
